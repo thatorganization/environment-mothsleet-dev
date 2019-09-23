@@ -1,0 +1,10 @@
+jenkins-x-platform:
+  PipelineSecrets:
+    DockerConfig: |-
+      {
+        "credsStore": "ecr-login"
+      }
+  docker-registry:
+    enabled: false
+  postinstalljob:
+    enabled: "true"
